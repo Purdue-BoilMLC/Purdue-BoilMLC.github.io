@@ -11,14 +11,14 @@ profiles:
   # and create one content file for each profile inside _pages/
   - name: Yineng Chen
     image: profiles/Yineng.jpg
-    title: Founder; President
+    title: Co-Founder
     link: https://chernyn.github.io/
     email: yineng_chen@outlook.com
     focus: ['Applied Math', 'Machine Learning']
-    
+
   - name: Yuetian Chen
     image: profiles/Yuetian.jpg
-    title: Team member
+    title: Co-Founder
     link: https://stry233.github.io/
     email: chen5264@purdue.edu
     focus: ['Membership Inference Attack', 'LLM Jailbreaking']
