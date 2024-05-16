@@ -1,36 +1,169 @@
 ---
 layout: page
 ---
-<div class="post">
-  <article>
+
+<style>
+  /* Custom styles for profile cards */
+  .grid-container {
+    max-width: {{ site.max_width | default: '1200px' }}; /* Fallback to 1200px if site.max_width isn't set */
+    margin: 0 auto; /* Centering the container */
+    padding: 0 15px; /* Adds some padding on smaller screens */
+  }
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+  .profile-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0.125rem;
+  }
+  .profile-card img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    aspect-ratio: 1 / 1; 
+    display: block;
+    border-radius: 0.125rem;
+  }
+  /* Additional styling for new content */
+  .profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .profile-title {
+    font-size: 16px; /* Adjust size as needed */
+    font-style: italic;
+    color: #555; /* Dark grey, adjust as needed */
+    margin-top: 5px; /* Adds a little spacing below the name */
+  }
+  .profile-bio-link {
+    font-size: 14px; /* Adjust size as needed */
+    color: #007bff; /* Adjust link color as needed */
+    cursor: pointer;
+    margin-top: 10px; /* Spacing before the bio link */
+    display: inline-block; /* makes margin effective */
+  }
+  @media (min-width: 768px) {
+    .profile-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 items for tablets and medium screens */
+    }
+  }
+  /* Hover effect for profile cards */
+  .profile-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(-5px); /* Makes the card "float" */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+  }
+
+  /* Animation for feedback when link is not available */
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-10px); }
+    20% { transform: translateX(10px); }
+    30% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    60% { transform: translateX(10px); }
+    70% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    90% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const cards = document.querySelectorAll('.profile-card');
+
+    cards.forEach(card => {
+      card.addEventListener('click', function () {
+        const profileLink = card.getAttribute('data-link');
+        // If profile link is available, redirect.
+        if (profileLink) {
+          window.location.href = profileLink;
+        } else {
+          // If no link, play a "shake" animation.
+          card.style.animation = 'shake 0.5s';
+          card.addEventListener('animationend', function() {
+            card.style.animation = '';
+          });
+        }
+      });
+    });
+  });
+</script>
+
+<!-- Bio Modal HTML -->
+<div id="bioModal" style="display:none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); padding-top: 100px;">
+  <div style="background: #fff; margin: auto; padding: 20px; width: 80%; max-width: 600px;">
+    <span id="closeModal" style="cursor:pointer; float:right; font-size:28px;">&times;</span>
+    <div id="bioContent" class="clearfix"></div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const bioLinks = document.querySelectorAll('.profile-bio-link');
+
+    bioLinks.forEach(function(link) {
+      link.addEventListener('click', function (event) {
+        // Prevent default action
+        event.preventDefault();
+        
+        // Get the bio file path
+        const bioPath = link.getAttribute('data-target');
+        // Fetch the Markdown content
+        fetch(bioPath)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text();
+          })
+          .then(text => {
+            // Display the content inside the modal
+            document.getElementById('bioContent').textContent = text; // This simply sets the text content for now
+            document.getElementById('bioModal').style.display = 'block';
+          })
+          .catch(error => {
+            console.error('Error fetching the bio:', error);
+          });
+      });
+    });
+
+    // Logic to close the modal
+    document.getElementById('closeModal').addEventListener('click', function() {
+      document.getElementById('bioModal').style.display = 'none';
+    });
+  });
+</script>
+
+
+<div class="grid-container">
+  <div class="profile-grid">
     {% if page.profiles %}
       {% for profile in page.profiles %}
-        <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
+        <div class="profile-card" {% if profile.link %}data-link="{{ profile.link }}"{% endif %}>
           {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+            {% assign profile_image_path = profile.image | prepend: '/assets/img/' | prepend: site.baseurl %}
+            <img src="{{ profile_image_path }}" alt="{{ profile.name }}">
           {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-        </div>
-
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
+          <div class="profile-name">{{ profile.name }}</div>
+          <div class="profile-title">{{ profile.title }}</div>
+          <div class="clearfix"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></div>
+          <div class="clearfix">
+            {% for focus in profile.focus %}
+              {{ focus }}<br>
+            {% endfor %}
+          </div>
         </div>
       {% endfor %}
     {% endif %}
-  </article>
+  </div>
 </div>

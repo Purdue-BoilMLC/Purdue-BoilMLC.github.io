@@ -1,28 +1,26 @@
 ---
 layout: profiles
 permalink: /people/
-title: people
-description: members of the lab or group
+title: People
+description: # members of the lab or group
 nav: true
 nav_order: 7
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
-  - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+  - name: Yineng Chen
+    image: profiles/Yineng.jpg
+    title: Founder; President
+    link: https://chernyn.github.io/
+    email: yineng_chen@outlook.com
+    focus: ['Applied Math', 'Machine Learning']
+    
+  - name: Yuetian Chen
+    image: profiles/Yuetian.jpg
+    title: Team member
+    link: https://stry233.github.io/
+    email: chen5264@purdue.edu
+    focus: ['Membership Inference Attack', 'LLM Jailbreaking']
+
 ---
