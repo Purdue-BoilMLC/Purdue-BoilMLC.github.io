@@ -17,7 +17,7 @@ footer_text: >
   The source code is licensed <a href="https://github.com/Purdue-BoilMLC/Purdue-BoilMLC.github.io/blob/master/LICENSE">MIT</a>.
 keywords: Machine Learning, Interdisciplinary Collaboration, Academic Initiative, PhD Students, Research, Innovation, Workshops, Seminars, Purdue University, Computer Science, Mathematics, Statistics
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🥛 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: u1f525_u1f95b.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://Purdue-BoilMLC.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
