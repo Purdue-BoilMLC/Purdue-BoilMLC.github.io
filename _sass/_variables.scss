@@ -4,6 +4,15 @@
  ******************************************************************************/
 
 // Colors
+$aged: #8E6F3E !default;
+$rush: #DAAA00 !default;
+$field: #DDB945 !default;
+$dust: #EBD99F !default;
+$steel: #555960 !default;
+$cool-gray: #6F727B !default;
+$railway-gray: #9D9795 !default;
+$steam: #C4BFC0 !default;
+$boilermaker-gold: #cfb991 !default;
 $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;
 $orange-color: #f29105 !default;
@@ -32,8 +41,8 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
-$code-bg-color-dark: #2c3237 !default;
+$code-bg-color-light: #f9f9f9;
+$code-bg-color-dark: #292929 !default;
 
 // Font awesome location
 $fa-font-path: "../webfonts";
