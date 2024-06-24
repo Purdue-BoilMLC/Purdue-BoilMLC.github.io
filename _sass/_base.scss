@@ -1109,3 +1109,19 @@ swiper-container {
     border-bottom: 2px solid var(--global-text-color);
   }
 }
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/assets/fonts/SmileySans-Oblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.abbr-title {
+  font-family: 'CustomFont', sans-serif; /* Use the custom font */
+}
+
+.adjust-text {
+  display: inline-block; /* Ensure inline elements respect margin and padding adjustments */
+  margin-top: 100px; /* Adjust value as needed */
+}
