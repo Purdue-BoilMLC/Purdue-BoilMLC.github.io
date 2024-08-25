@@ -1,33 +1,42 @@
-<!-- ---
+---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: 📢 Join Our 2024-25 Weekly Online Discussions
+date: 2024-08-24 20:00:00-0400
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+Boilermakers Machine Learning Collaborative (Boil-MLC) is thrilled to announce a new initiative to facilitate deeper engagement with the cutting-edge field of machine learning. We are hosting multiple weekly online discussions focused on various aspects of ML, spanning both theoretical and applied research.
+
+
+#### Why You Should Join:
+
+- **Interdisciplinary Learning:** Connect with peers from diverse academic backgrounds.
+- **Expert Insights:** Engage with leading researchers and practitioners in the field.
+- **Dynamic Topics:** Delve into a wide range of ML subjects, from neural networks to reinforcement learning, and more.
+- **Interactive Format:** Participate in lively debates, Q&A sessions, and collaborative problem-solving.
+
+#### Schedule & Syllabus
+
+For a detailed syllabus and discussion schedule, please refer to our [event page](https://purdue-boilmlc.github.io/projects/). Mark your calendars and make sure not to miss these enriching sessions!
 
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+The Boil-MLC is committed to creating a vibrant, intellectual community at Purdue University. Whether you’re an ML novice or a seasoned expert, our online discussions are tailored to inspire and enhance your knowledge.
 
-#### Hipster list
+We look forward to your participation!
+
+---
+
+#### Sneak Peek of Our Discussion Topics:
 
 <ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
+    <li>Deep Learning Techniques</li>
+    <li>Ethics in AI</li>
+    <li>Natural Language Processing</li>
+    <li>Machine Learning for Robotics</li>
 </ul>
-
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
 
 ---
 
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
-
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual. -->
+Stay connected, stay curious, and together, let’s push the boundaries of machine learning research!
