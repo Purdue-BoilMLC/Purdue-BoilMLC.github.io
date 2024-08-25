@@ -2,7 +2,7 @@
 layout: page
 title: "Deep Generative Models"
 description: 2024-25 Weekly Discussion Session II
-img: "assets/img/event/DGM-structure.webp"
+img: "assets/img/event/language-generate.webp.webp"
 importance: 1
 category: "Weekly Discussion"
 ---
