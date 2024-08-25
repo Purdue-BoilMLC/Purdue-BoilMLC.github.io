@@ -23,4 +23,38 @@ profiles:
     email: chen5264@purdue.edu
     focus: ['Membership Inference Attack', 'LLM Jailbreaking']
 
+  - name: Bole Ma
+    image: profiles/unknown.png
+    title: Co-Founder
+    link: 
+    email: 
+    focus: []
+
+  - name: Linxuan Wang
+    image: profiles/unknown.png
+    title: Member
+    link: 
+    email: wang6559@purdue.edu
+    focus: ['Nonparametric Bayes', 'Markov Chain Monte Carlo', 'Continuous time stochastic processes']
+
+  - name: Shi Hu
+    image: profiles/unknown.png
+    title: Member
+    link: 
+    email: 
+    focus: []
+
+  - name: Linxuan Wang
+    image: profiles/unknown.png
+    title: Member
+    link: 
+    email: 
+    focus: []
+
+  - name: Yunhui Jiang
+    image: profiles/unknown.png
+    title: Member
+    link: 
+    email: 
+    focus: []
 ---
