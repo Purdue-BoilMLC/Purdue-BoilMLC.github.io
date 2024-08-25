@@ -25,7 +25,7 @@ profiles:
 
   - name: Bole Ma
     image: profiles/unknown.png
-    title: Co-Founder
+    title: Member
     link: 
     email: 
     focus: []
@@ -38,13 +38,6 @@ profiles:
     focus: ['Nonparametric Bayes', 'Markov Chain Monte Carlo', 'Continuous time stochastic processes']
 
   - name: Shi Hu
-    image: profiles/unknown.png
-    title: Member
-    link: 
-    email: 
-    focus: []
-
-  - name: Linxuan Wang
     image: profiles/unknown.png
     title: Member
     link: 
