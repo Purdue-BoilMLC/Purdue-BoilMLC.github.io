@@ -40,7 +40,7 @@ All sessions will be recorded and made available post-meeting on this page for m
 
 At the beginning of each week, all regular participants will decide on papers to be discussed on Saturday so that we can read them during the week. The information of the events on the website will also be updated synchronously. If you have other ideas that you feel interested, you are entirely welcome to explore other papers on related topics and discuss it on our session meeting.
 
-### Session Schedule
+### Session Schedule (updating synchronously)
 
 #### Week 1 (Aug 31st, 2024): Introduction 
 - [An Introduction to Deep Generative Models](https://arxiv.org/pdf/2103.05180)
