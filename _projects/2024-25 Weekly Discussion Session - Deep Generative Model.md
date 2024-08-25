@@ -2,19 +2,19 @@
 layout: page
 title: "Deep Generative Models"
 description: 2024-25 Weekly Discussion Session II
-img: "assets/img/event/language-generate.webp.webp"
+img: "assets/img/event/Language-generate-cover.webp"
 importance: 1
 category: "Weekly Discussion"
 ---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/event/language-generate.webp" title="language-generate" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/event/Language-generate.webp" title="language-generate" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/event/DGM-structure.png" title="DGM-structure" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/event/photo-generate.png" title="image-generate" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/event/photo-generate.webp" title="image-generate" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
