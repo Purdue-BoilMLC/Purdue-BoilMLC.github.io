@@ -13,7 +13,7 @@ profiles:
     image: profiles/Yineng.jpg
     title: Co-Founder
     link: https://chernyn.github.io/
-    email: yineng_chen@outlook.com
+    email: chen5223@purdue.edu
     focus: ['Applied Math', 'Machine Learning']
 
   - name: Yuetian Chen
