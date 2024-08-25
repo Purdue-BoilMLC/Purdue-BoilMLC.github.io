@@ -20,7 +20,7 @@ category: "Weekly Discussion"
 
 ### Discussion Theme: Deep Generative Model
 
-<p style="text-align: justify;"> Welcome to the our Session! It is designed to provide an in-depth exploration of one of the most exciting areas in machine learning. A deep generative model is a sophisticated deep learning approach that learns to generate new data by modeling the underlying probability distribution of a given dataset. It integrates mathematical concepts such as optimization and linear algebra, statistical techniques like probabilistic modeling and sampling methods, and methods in computer science to train deep neural networks capable of capturing complex patterns in data. These models are used in various industrial applications, including image synthesis and natural language processing. In fact, this paragraph was partially aided by a generative model -- showing just how useful these models can be! </p>
+<p style="text-align: justify;">Welcome to the our Session! It is designed to provide an in-depth exploration of one of the most exciting areas in machine learning. A deep generative model is a sophisticated deep learning approach that learns to generate new data by modeling the underlying probability distribution of a given dataset. It integrates mathematical concepts such as optimization and linear algebra, statistical techniques like probabilistic modeling and sampling methods, and methods in computer science to train deep neural networks capable of capturing complex patterns in data. These models are used in various industrial applications, including image synthesis and natural language processing. In fact, this paragraph was partially aided by a generative model -- showing just how useful these models can be!</p>
 
 ### Meeting Details
 
