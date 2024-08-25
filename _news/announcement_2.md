@@ -18,15 +18,7 @@ Boilermakers Machine Learning Collaborative (Boil-MLC) is thrilled to announce a
 
 #### Schedule & Syllabus
 
-For a detailed syllabus and discussion schedule, please refer to our [event page](https://purdue-boilmlc.github.io/projects/). Mark your calendars and make sure not to miss these enriching sessions!
-
----
-
-The Boil-MLC is committed to creating a vibrant, intellectual community at Purdue University. Whether you’re an ML novice or a seasoned expert, our online discussions are tailored to inspire and enhance your knowledge.
-
-We look forward to your participation!
-
----
+For a detailed syllabus and discussion schedule, please refer to our [event page](https://purdue-boilmlc.github.io/events/). Mark your calendars and make sure not to miss these enriching sessions!
 
 #### Sneak Peek of Our Discussion Topics:
 
@@ -37,6 +29,14 @@ We look forward to your participation!
     <li>Machine Learning for Robotics</li>
 </ul>
 
+
+
+Stay connected, stay curious, and together, let’s push the boundaries of machine learning research :-)
+
 ---
 
-Stay connected, stay curious, and together, let’s push the boundaries of machine learning research!
+The Boil-MLC is committed to creating a vibrant, intellectual community at Purdue University. Whether you’re an ML novice or a seasoned expert, our online discussions are tailored to inspire and enhance your knowledge.
+
+We look forward to your participation!
+
+---
