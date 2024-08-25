@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Events
-permalink: /projects/
+permalink: /events/
 description:
 nav: true
 nav_order: 3
-display_categories: [2024]
+display_categories: ["Weekly Discussion"]
 horizontal: false
 ---
 
