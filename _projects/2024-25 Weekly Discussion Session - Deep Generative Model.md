@@ -43,5 +43,18 @@ At the beginning of each week, all regular participants will decide on papers to
 ### Session Schedule (updating synchronously)
 
 #### Week 1 (Aug 31st, 2024): Introduction 
+- An introduction to Flow model, GAN and VAE.
+
+**Materials:**
 - [An Introduction to Deep Generative Models](https://arxiv.org/pdf/2103.05180)
+
+#### Week 2 (Sep 7th, 2024: A simple guide to Variational Autoencoder Model)
+- VAE Architecture and Training: encoder-decoder structure, optimized by minimizing ELBO using the reparameterization trick.
+- Variational Inference: approximates complex posteriors, balancing reconstruction loss and KL divergence.
+- Advantages and disadvantages: generates smooth latent representations but may produce lower-quality samples and face challenges like posterior collapse.
+
+**Materials:**
+- [Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114)
+- [Tutorial on Variational Autoencoders](https://arxiv.org/pdf/1606.05908)
+
 
