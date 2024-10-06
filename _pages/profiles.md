@@ -23,6 +23,20 @@ profiles:
     email: chen5264@purdue.edu
     focus: ['Membership Inference Attack', 'LLM Jailbreaking']
 
+  - name: Jinen Setpal
+    image: profiles/Jinen.jpeg
+    title: Member
+    link: https://jinen.setpal.net/
+    email: jinen@setpal.net
+    focus: ['Deep Learning Optimization Theory', 'Intrinsic Interpretability']
+
+  - name: Arin Chang
+    image: profiles/Arin.jpeg
+    title: Member
+    link: 
+    email: chan1074@purdue.edu
+    focus: ['Differential Privacy', 'Statistics', 'Machine Learning']
+
   - name: Bole Ma
     image: profiles/unknown.png
     title: Member
