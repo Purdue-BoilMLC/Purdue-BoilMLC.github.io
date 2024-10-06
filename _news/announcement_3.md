@@ -7,8 +7,6 @@ related_posts: false
 ---
 
 
-# Boil-MLC First Callout 2024: Join Us in Shaping the Future of Machine Learning
-
 ## Event Overview
 
 Boil-MLC (Machine Learning Club) is excited to announce our First Callout for the Fall 2024 semester. This event marks the beginning of an exciting year filled with learning, collaboration, and innovation in the field of machine learning.

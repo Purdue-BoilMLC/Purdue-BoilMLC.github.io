@@ -3,10 +3,12 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
+    <div class="logo-container">
+      <img src="{{ site.logo }}" alt="Logo" style="height: 60px; margin-bottom: 20px; transition: transform 0.3s ease;" class="interactive-logo" id="easter-egg-logo">
+    </div>
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
@@ -15,39 +17,164 @@ layout: default
   </header>
 
   <article>
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix fade-in-on-scroll" style="max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6;">{{ content }}</div>
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <section class="news-section interactive-section fade-in-on-scroll" style="background: url('{{ site.baseurl }}/assets/img/news-bg.webp'), linear-gradient(135deg, rgba(243, 244, 246, 0.6), rgba(255, 255, 255, 0.6)); background-size: cover; background-blend-mode: overlay; padding: 50px; border-radius: 20px; margin: 40px 0; transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1);">
+        <h2 style="font-family: 'Poppins', sans-serif; font-size: 2.4em; font-weight: 700; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);">
+          <a href="{{ '/news/' | relative_url }}" style="color: #222; text-decoration: none;">News & Announcements</a>
+        </h2>
+        <div class="news-container">
+          {% include news.liquid limit=true %}
+        </div>
+      </section>
     {% endif %}
 
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+      <section class="latest-posts-section interactive-section fade-in-on-scroll" style="background: url('{{ site.baseurl }}/assets/img/posts-bg.webp'), linear-gradient(135deg, rgba(232, 234, 237, 0.6), rgba(255, 255, 255, 0.6)); background-size: cover; background-blend-mode: overlay; padding: 50px; border-radius: 20px; margin: 40px 0; transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1);">
+        <h2 style="font-family: 'Poppins', sans-serif; font-size: 2.4em; font-weight: 700; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);">
+          <a href="{{ '/blog/' | relative_url }}" style="color: #222; text-decoration: none;">Latest Blog Posts</a>
+        </h2>
+        <div class="latest-posts-container">
+          {% include latest_posts.liquid %}
+        </div>
+      </section>
     {% endif %}
 
-    <!-- Selected papers -->
+    <!-- Selected Papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      <section class="selected-papers-section interactive-section fade-in-on-scroll" style="background: url('{{ site.baseurl }}/assets/img/papers-bg.webp'), linear-gradient(135deg, rgba(241, 241, 243, 0.6), rgba(255, 255, 255, 0.6)); background-size: cover; background-blend-mode: overlay; padding: 50px; border-radius: 20px; margin: 40px 0; transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1);">
+        <h2 style="font-family: 'Poppins', sans-serif; font-size: 2.4em; font-weight: 700; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);">
+          <a href="{{ '/publications/' | relative_url }}" style="color: #222; text-decoration: none;">Selected Publications</a>
+        </h2>
+        <div class="selected-papers-container">
+          {% include selected_papers.liquid %}
+        </div>
+      </section>
     {% endif %}
 
-    <!-- Social -->
+    <!-- Social Section -->
     {% if page.social %}
-      <div class="social">
+      <div class="social interactive-section fade-in-on-scroll" style="background: url('{{ site.baseurl }}/assets/img/social-bg.webp'), linear-gradient(135deg, rgba(236, 236, 236, 0.6), rgba(255, 255, 255, 0.6)); background-size: cover; background-blend-mode: overlay; padding: 40px; border-radius: 15px; margin-top: 50px; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1);">
+        <h2 style="font-family: 'Poppins', sans-serif; font-size: 2.2em; font-weight: 700;">Connect With Us</h2>
         <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
+        <div class="contact-note" style="max-width: 600px; margin: 20px auto; color: #444;">{{ site.contact_note }}</div>
       </div>
     {% endif %}
   </article>
 </div>
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9fb;
+    color: #333;
+    line-height: 1.8;
+  }
+  .post-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .interactive-logo:hover {
+    transform: scale(1.1);
+  }
+  .interactive-section:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  .fade-in-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  }
+  .fade-in-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .post-title {
+    font-size: 2.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1.5px;
+  }
+  .desc {
+    font-size: 1.3em;
+    color: #666;
+    font-style: italic;
+  }
+  .news-container, .latest-posts-container, .selected-papers-container {
+    margin: 20px 0;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  .social {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contact-icons {
+    margin: 20px 0;
+  }
+  .contact-note {
+    font-style: italic;
+    color: #555;
+  }
+  a {
+    color: #0061f2;
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: #004bb5;
+  }
+  .layered-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    z-index: -1;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const elements = document.querySelectorAll('.fade-in-on-scroll');
+    const logo = document.getElementById('easter-egg-logo');
+    let clickCount = 0;
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    elements.forEach(element => {
+      observer.observe(element);
+    });
+
+    // Easter egg for the logo
+    logo.addEventListener('click', () => {
+      clickCount++;
+      if (clickCount === 5) {
+        alert('🎉 You found the Easter egg! Thanks for being curious! 🎉');
+        logo.style.transform = 'rotate(360deg)';
+        setTimeout(() => {
+          logo.style.transform = 'scale(1.2)';
+        }, 300);
+      }
+    });
+  });
+</script>
