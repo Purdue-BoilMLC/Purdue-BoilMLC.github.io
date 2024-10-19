@@ -37,6 +37,13 @@ profiles:
     email: chan1074@purdue.edu
     focus: ['Differential Privacy', 'Statistics', 'Machine Learning']
 
+  - name: Rohan Dekate
+    image: profiles/Rohan.jpeg
+    title: Member
+    link:  https://www.linkedin.com/in/rohanmdekate
+    email: dekate@purdue.edu
+    focus: ['Mechanical Engineering']
+
   - name: Bole Ma
     image: profiles/unknown.png
     title: Member
